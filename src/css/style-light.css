@@ -1,0 +1,22 @@
+:root {
+    --bg-url: url(../imagens/bg-desktop.png);
+    --text-color: white;
+    --stroke-color: rgba(102, 95, 132, 0.5);
+    --surface-color: rgba(70, 12, 170, 0.155);
+    --li-color: rgba(20, 3, 49, 0.993);
+    --text-dev: rgba(135, 165, 226, 0.786);
+    --text-name: rgba(72, 130, 245, 0.786);
+    --swicth-bg-url: url(../imagens/moon.svg);
+}
+
+
+.light {
+    --bg-url: url(../imagens/bg-desktop-light.png);
+    --text-color: black;
+    --stroke-color: rgba(243, 195, 226, 0.295);
+    --surface-color: rgba(201, 177, 202, 0.137);
+    --li-color: rgba(219, 203, 241, 0.993);
+    --text-dev: rgba(71, 5, 133, 0.986);
+    --text-name: rgba(102, 10, 187, 0.747);
+    --swicth-bg-url: url(../imagens/sun.svg);
+}
