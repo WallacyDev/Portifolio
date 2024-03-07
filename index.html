@@ -7,42 +7,92 @@
 
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/style-light.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
     <title>Wallacy Correia</title>
 </head>
 
 <body>
-    <main class="container">
-        <div class="profile">
-            <img src="src/imagens/avatar.png" alt="avatar">
-            <h1 class="texto-dev">FullStack Developer</h1>
-            <h3 class="texto-name">Wallacy Correia</h3>
-        </div>
+    <header class="profile">
+        <h1 class="texto-dev">FullStack Developer</h1>
         <div class="dark-mode" onclick="toggleMode()">
             <button></button>
             <span></span>
         </div>
-        <ul>
-            <li><a href="#" target="_blank">Meus Projetos</a></li>
-            <li><a href="#" target="_blank">Soft-skill</a></li>
-            <li><a href="#" target="_blank">Habilidades</a></li>
-            <li><a href="#" target="_blank">Sobre Mim</a></li>
-        </ul>
-        <div class="social-links">
-            <a href="https://github.com/WallacyDev" target="_blank" rel="noopener noreferrer">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a href="https://www.linkedin.com/in/wallacycorreia" target="_blank" rel="noopener noreferrer">
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="https://instagram.com/Wallacy_Correia" target="_blank" rel="noopener noreferrer">
+        <nav>
+            <ul>
+                <li><a href="#projetos" target="_blank">Meus Projetos</a></li>
+                <li><a href="#" target="_blank">Soft-skill</a></li>
+                <li><a href="#" target="_blank">Habilidades</a></li>
+                <li><a href="#" target="_blank">Sobre Mim</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a href="https://wa.me/5581996410718" target="_blank" rel="noopener noreferrer">
-                <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-        </div>
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Selecione Um Personagem</h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="ciclope" data-name="Ciclope"
+                    data-description="Ciclope Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo dolores saepe libero ducimus, doloremque laudantium, exercitationem soluta provident repellat, alias voluptates enim dolor nostrum ad laborum minima harum officiis.">
+                    <img src="./src/imagens/card-ciclope.jpg" alt="Personagem ciclope">
+                </li>
+                <li class="personagem" id="jean-grey" data-name="Jean Grey"
+                    data-description="Jean Grey Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo dolores saepe libero ducimus, doloremque laudantium, exercitationem soluta provident repellat, alias voluptates enim dolor nostrum ad laborum minima harum officiis.">
+                    <img src="./src/imagens/card-jean-grey.jpg" alt="Personagem jean-grey">
+                </li>
+                <li class="personagem" id="lince-negra" data-name="Lince Negra"
+                    data-description="Lince Negra Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo dolores saepe libero ducimus, doloremque laudantium, exercitationem soluta provident repellat, alias voluptates enim dolor nostrum ad laborum minima harum officiis.">
+                    <img src="./src/imagens/card-lince-negra.jpg" alt="Personagem lince-negra">
+                </li>
+                <li class="personagem" id="magneto" data-name="Magneto"
+                    data-description="Magneto Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo dolores saepe libero ducimus, doloremque laudantium, exercitationem soluta provident repellat, alias voluptates enim dolor nostrum ad laborum minima harum officiis.">
+                    <img src="./src/imagens/card-magneto.jpg" alt="Personagem magneto">
+                </li>
+                <li class="personagem" id="noturno" data-name="Noturno"
+                    data-description="Noturno Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo dolores saepe libero ducimus, doloremque laudantium, exercitationem soluta provident repellat, alias voluptates enim dolor nostrum ad laborum minima harum officiis.">
+                    <img src="./src/imagens/card-noturno.jpg" alt="Personagem noturno">
+                </li>
+                <li class="personagem" id="tempestade" data-name="Tempestade"
+                    data-description="Tempestade Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo dolores saepe libero ducimus, doloremque laudantium, exercitationem soluta provident repellat, alias voluptates enim dolor nostrum ad laborum minima harum officiis.">
+                    <img src="./src/imagens/card-tempestade.jpg" alt="Personagem tempestade">
+                </li>
+                <li class="personagem" id="vampira" data-name="Vampira"
+                    data-description="Vampira Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo dolores saepe libero ducimus, doloremque laudantium, exercitationem soluta provident repellat, alias voluptates enim dolor nostrum ad laborum minima harum officiis.">
+                    <img src="./src/imagens/card-vampira.jpg" alt="Personagem vampira">
+                </li>
+                <li class="personagem" id="wolverine" data-name="Wolverine"
+                    data-description="Wolverine Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo dolores saepe libero ducimus, doloremque laudantium, exercitationem soluta provident repellat, alias voluptates enim dolor nostrum ad laborum minima harum officiis.">
+                    <img src="./src/imagens/card-wolverine.jpg" alt="Personagem wolverine">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/card-ciclope.png" alt="Personagem Selecionado">
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Tempore officia quisquam tempora ab, in sed enim consequuntur numquam recusandae
+                    sunt. Aliquid fuga commodi nostrum possimus voluptate deserunt totam error temporibus!</p>
+            </div>
+        </section>
     </main>
+
+    <footer class="social-links">
+        <a href="https://github.com/WallacyDev" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/wallacycorreia" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://instagram.com/Wallacy_Correia" target="_blank" rel="noopener noreferrer">
+
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://wa.me/5581996410718" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+    </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
 
     <script src="src/js/index.js"></script>
