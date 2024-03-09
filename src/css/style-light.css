@@ -1,4 +1,5 @@
 :root {
+    --bg-header: black;
     --bg-url: url(../imagens/bg-desktop.png);
     --text-color: white;
     --stroke-color: rgba(102, 95, 132, 0.5);
@@ -11,6 +12,7 @@
 
 
 .light {
+    --bg-header: aliceblue;
     --bg-url: url(../imagens/bg-desktop-light.png);
     --text-color: black;
     --stroke-color: rgba(243, 195, 226, 0.295);

@@ -22,13 +22,17 @@ body {
 }
 
 .profile {
+    background: var(--bg-header);
     font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid var(--stroke-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
 }
 
 .texto-dev {
@@ -37,6 +41,7 @@ body {
     color: var(--text-dev);
     font-family: 'Poppins', sans-serif;
     transition: ease 0.3s;
+    z-index: 3;
 }
 
 .profile .texto-dev:hover {
@@ -46,6 +51,7 @@ body {
 /*  BOTÃO DARK-MODE */
 .dark-mode {
     position: relative;
+    z-index: 3;
 }
 
 .dark-mode button {
@@ -82,6 +88,7 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 16px;
+    z-index: 3;
 }
 
 nav ul li a {
@@ -108,6 +115,7 @@ ul li a:hover {
     /* min-height: calc(100vh - 152px); = é uma propriedade que calcula o tamanho da altura ou largura da tela */
     min-height: calc(100vh);
     padding-top: 50px;
+    z-index: 2;
 }
 
 .selecao-de-personagens .lista-de-personagens {
@@ -185,6 +193,7 @@ ul li a:hover {
     padding: 24px 0;
     gap: 16px;
     font-size: 36px;
+    z-index: 2;
 }
 
 .social-links a {
