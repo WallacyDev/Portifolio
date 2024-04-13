@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
 
 * {
     padding: 0;
@@ -18,7 +21,6 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    gap: 50px;
 }
 
 .profile {
@@ -26,17 +28,18 @@ body {
     font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid var(--stroke-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
     width: 100%;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    z-index: 3;
+    height: 40px;
+    /* position: fixed; */
+    /* top: 0;
+    z-index: 3; */
 }
 
 .texto-dev {
-    font-size: 48px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--text-dev);
     font-family: 'Poppins', sans-serif;
@@ -56,8 +59,8 @@ body {
 
 .dark-mode button {
     background: white var(--swicth-bg-url) no-repeat center;
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     border: 0;
     border-radius: 50%;
     position: absolute;
@@ -73,8 +76,8 @@ body {
 .dark-mode span {
     position: relative;
     display: block;
-    width: 48px;
-    height: 24px;
+    width: 32px;
+    height: 16px;
     background: var(--surface-color);
     border: 1px solid var(--stroke-color);
     border-radius: 9999px;
@@ -83,20 +86,20 @@ body {
 }
 
 /* Seção dos Links */
-nav ul {
-    list-style-type: none;
+.main ul {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 16px;
-    z-index: 3;
+    height: 40px;
+    padding: 10px;
 }
 
-nav ul li a {
+.main ul li a {
     border: 1px solid var(--stroke-color);
     border-radius: 10px;
     padding: 8px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     transition: background ease-in-out 0.3s;
 }
@@ -107,14 +110,128 @@ ul li a:hover {
     border: 1px solid var(--text-color);
 }
 
+.imagens-slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagens-slider .slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.imagens-slider .slide.mostrar {
+    opacity: 1;
+}
+
+.slide-rosa {
+    background-image: url(../imagens/flores.png);
+}
+
+.slide-verde {
+    background-image: url(../imagens/girassol.png);
+}
+
+.slide-laranja {
+    background-image: url(../imagens/montanha.png);
+}
+
+.slide-azul {
+    background-image: url(../imagens/lago.png);
+}
+
+.seta-voltar,
+.seta-avancar {
+    position: absolute;
+    z-index: 1;
+}
+
+.seta-voltar {
+    left: 4%;
+    transform: rotateY(180deg);
+}
+
+.seta-avancar {
+    right: 4%;
+}
+
+.imagem-seta {
+    width: 20px;
+    height: 40px;
+}
+
+.opacidade {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.conteudo {
+    background-color: #fff;
+    margin: 50px;
+    padding: 15px 10px;
+    width: 420px;
+    border-radius: 10px;
+}
+
+.conteudo .titulo {
+    margin-bottom: 80px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.conteudo .texto {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.conteudo .botao {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.botao.rosa {
+    color: #C50000;
+}
+
+.botao.verde {
+    color: #D9DD10;
+}
+
+.botao.laranja {
+    color: #A63A17;
+}
+
+.botao.azul {
+    color: #10ACDD;
+}
+
+#softskill {
+    background-image: url(../imagens/lago.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 80px);
+    /* min-height: calc(100vh - 152px); = é uma propriedade que calcula o tamanho da altura ou largura da tela */
+}
+
 .selecao-de-personagens {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* min-height: calc(100vh - 152px); = é uma propriedade que calcula o tamanho da altura ou largura da tela */
-    min-height: calc(100vh);
-    padding-top: 50px;
     z-index: 2;
 }
 

@@ -66,3 +66,66 @@ function alterarDescriçãoPersonagemSelecionado(personagem) {
   const descricaoPersonagem = document.getElementById('descricao-personagem');
   descricaoPersonagem.innerText = personagem.getAttribute('data-description');
 }
+
+// CARROSSELDE SLIDES
+const imagens = document.querySelectorAll('.slide');
+const setaVoltar = document.getElementById('seta-voltar');
+const setaAvancar = document.getElementById('seta-avancar');
+
+let imagemAtual = 0;
+
+function esconderImagens() {
+    imagens.forEach(imagem => {
+        console.log(imagem.classList.remove('mostrar'))
+    });
+}
+
+function mostrarImagem() {
+    imagens[imagemAtual].classList.add('mostrar');
+    console.log(imagens[0]);
+}
+
+function mostrarOuEsconderSetas() {
+    const naoEstaNaPrimeiraImagem = imagemAtual !== 0;
+
+    if (naoEstaNaPrimeiraImagem) {
+        setaVoltar.classList.remove("opacidade")
+    } else {
+        setaVoltar.classList.add("opacidade")
+    }
+
+    const EstaNaUltimaImagem = imagemAtual !== 0 && imagemAtual === imagens.length - 1;
+
+    if (EstaNaUltimaImagem) {
+        setaAvancar.classList.add("opacidade")
+    } else{
+        setaAvancar.classList.remove("opacidade")
+    }
+}
+
+setaAvancar.addEventListener('click', function () {
+    const totalDeimagens = imagens.length - 1;
+    if (imagemAtual === totalDeimagens) {
+        console.log('não tem como avancar');
+        return;
+    }
+    imagemAtual++;
+    console.log(imagemAtual)
+    esconderImagens();
+    mostrarImagem();
+
+    mostrarOuEsconderSetas()
+});
+
+setaVoltar.addEventListener('click', function () {
+    if (imagemAtual === 0) {
+        console.log('não tem como voltar')
+        return;
+    }
+    imagemAtual--;
+    console.log(imagemAtual);
+    esconderImagens();
+    mostrarImagem();
+mostrarOuEsconderSetas();
+
+});

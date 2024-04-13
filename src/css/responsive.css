@@ -1,9 +1,39 @@
-@media(max-width: 320px) {
-    .container {
-        width: 100vw;
-        height: auto;
+/* @media (max-width: 1120px){
+    .cabecalho .profile{
+        display: none;
     }
-    .profile .texto-dev{
-        font-size: 24px;
+
+    .selecao-de-personagens{
+        flex-direction: column-reverse;
+        max-width: 430px;
+        margin: 0 auto;
     }
-}
+
+    .selecao-de-personagens .personagens{
+        margin-top: 40px;
+    }
+
+    .selecao-de-personagens .personagens .titulo{
+        font-size: 15px;
+    }
+
+    .selecao-de-personagens .lista-de-personagens{
+        gap: 10px
+    }
+
+    .selecao-de-personagens .personagem img{
+        width: 80px;
+    }
+
+    .personagem-selecionado .personagem-grande{
+        width: 300px;
+        height: 300px;
+    }
+
+    .personagem-selecionado .descricao-personagem{
+        width: 80%;
+        font-size: 16px;
+        margin: 20px auto;
+    }
+
+} */

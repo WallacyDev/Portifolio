@@ -14,25 +14,83 @@
 
 <body>
     <header class="profile">
-        <h1 class="texto-dev">FullStack Developer</h1>
+        <h1 class="texto-dev">Wallacy Correia</h1>
         <div class="dark-mode" onclick="toggleMode()">
             <button></button>
             <span></span>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#projetos">Meus Projetos</a></li>
-                <li><a href="#softskill">Soft-skill</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav class="main">
+        <ul>
+            <li><a href="#projetos">Meus Projetos</a></li>
+            <li><a href="#softskill">Soft-skill</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+        </ul>
+    </nav>
 
-    <section id="projetos" class="projetos"></section>
-    <section id="softskill" class="softskill"></section>
+    <section id="projetos" class="projeto">
+        <div class="imagens-slider">
+            <h2 class="titulo">Projetos</h2>
 
-    <section id="#habilidades" class="selecao-de-personagens">
+            <a href="#" id="seta-voltar" class="seta seta-voltar opacidade">
+                <img class="imagem-seta" src="src/imagens/seta.png" alt="seta-voltar">
+            </a>
+    
+            <div class="slide slide-rosa mostrar">
+                <div class="conteudo">
+                    <h2 class="titulo">Titulo slide 1</h2>
+                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
+                        provident
+                        aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
+                        placeat, distinctio aut!</p>
+                    <a href="#" class="botao rosa">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="slide slide-verde">
+                <div class="conteudo">
+                    <h2 class="titulo">Titulo slide 2</h2>
+                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
+                        provident
+                        aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
+                        placeat, distinctio aut!</p>
+                    <a href="#" class="botao verde">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="slide slide-laranja">
+                <div class="conteudo">
+                    <h2 class="titulo">Titulo slide 3</h2>
+                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
+                        provident
+                        aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
+                        placeat, distinctio aut!</p>
+                    <a href="#" class="botao laranja">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="slide slide-azul">
+                <div class="conteudo">
+                    <h2 class="titulo">Titulo slide 4</h2>
+                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
+                        provident
+                        aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
+                        placeat, distinctio aut!</p>
+                    <a href="#" class="botao azul">Saiba Mais</a>
+                </div>
+            </div>
+    
+            <a href="#" id="seta-avancar" class="seta seta-avancar">
+                <img class="imagem-seta" src="src/imagens/seta.png" alt="seta-avancar">
+            </a>
+    
+        </div>
+    
+    </section>
+
+    <section id="softskill" class="skill">
+        <h2 class="titulo">Soft-skill</h2>
+    </section>
+
+    <section id="habilidades" class="selecao-de-personagens">
         <section class="personagens">
             <h1 class="titulo">TECNOLOGIAS E HABILIDADES</h1>
             <ul class="lista-de-personagens">
@@ -78,7 +136,7 @@
                 </li>
             </ul>
         </section>
-        <section class="personagem-selecionado">
+        <!-- <section class="personagem-selecionado">
             <img class="personagem-grande" src="./src/imagens/icons8-html.png" alt="Personagem Selecionado">
 
             <div class="informacoes-personagem">
@@ -87,7 +145,7 @@
                     adipisicing elit. Tempore officia quisquam tempora ab, in sed enim consequuntur numquam recusandae
                     sunt. Aliquid fuga commodi nostrum possimus voluptate deserunt totam error temporibus!</p>
             </div>
-        </section>
+        </section> -->
     </section>
 
     <footer id="sobre" class="social-links">
