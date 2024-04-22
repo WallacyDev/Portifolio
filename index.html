@@ -13,38 +13,37 @@
 </head>
 
 <body>
-    <header class="profile">
-        <h1 class="texto-dev">Wallacy Correia</h1>
-        <div class="dark-mode" onclick="toggleMode()">
-            <button></button>
-            <span></span>
+    <header>
+        <div class="profile">
+            <h1 class="texto-dev">Wallacy Correia</h1>
+            <div class="dark-mode" onclick="toggleMode()">
+                <button></button>
+                <span></span>
+            </div>
         </div>
+        <nav class="main">
+            <ul>
+                <li><a href="#projetos">Meus Projetos</a></li>
+                <li><a href="#softskill">Soft-skill</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav class="main">
-        <ul>
-            <li><a href="#projetos">Meus Projetos</a></li>
-            <li><a href="#softskill">Soft-skill</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#sobre">Sobre Mim</a></li>
-        </ul>
-    </nav>
 
     <section id="projetos" class="projeto">
         <div class="imagens-slider">
-            <h2 class="titulo">Projetos</h2>
+            <!-- <h2 class="titulo">Projetos</h2> -->
 
             <a href="#" id="seta-voltar" class="seta seta-voltar opacidade">
                 <img class="imagem-seta" src="src/imagens/seta.png" alt="seta-voltar">
             </a>
-    
+
             <div class="slide slide-rosa mostrar">
                 <div class="conteudo">
-                    <h2 class="titulo">Titulo slide 1</h2>
-                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
-                        provident
-                        aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
-                        placeat, distinctio aut!</p>
-                    <a href="#" class="botao rosa">Saiba Mais</a>
+                    <img src="src/imagens/hamburgeria-mobile.jpg" alt="">
+                    <p class="texto">Uma Landing Page para Hamburgeria com Link para Whatsapp</p>
+                    <a href="https://landing-page-hamburgeria.vercel.app/" class="botao rosa">Deploy</a>
                 </div>
             </div>
             <div class="slide slide-verde">
@@ -77,13 +76,13 @@
                     <a href="#" class="botao azul">Saiba Mais</a>
                 </div>
             </div>
-    
+
             <a href="#" id="seta-avancar" class="seta seta-avancar">
                 <img class="imagem-seta" src="src/imagens/seta.png" alt="seta-avancar">
             </a>
-    
+
         </div>
-    
+
     </section>
 
     <section id="softskill" class="skill">
