@@ -14,12 +14,12 @@
 
 <body>
     <header>
-        <div class="profile">
-            <h1 class="texto-dev">Wallacy Correia</h1>
-            <div class="dark-mode" onclick="toggleMode()">
-                <button></button>
-                <span></span>
-            </div>
+        <div>
+            <img class="logo-dev" src="src/imagens/logos do portifolio/desktop-black.png" alt="logo-dev">
+        </div>
+        <div class="dark-mode" onclick="toggleMode()">
+            <button></button>
+            <span></span>
         </div>
         <nav class="main">
             <ul>
@@ -31,62 +31,60 @@
         </nav>
     </header>
 
-    <section id="projetos" class="projeto">
-        <div class="imagens-slider">
-            <!-- <h2 class="titulo">Projetos</h2> -->
+    <section class="imagens-slider">
 
-            <a href="#" id="seta-voltar" class="seta seta-voltar opacidade">
-                <img class="imagem-seta" src="src/imagens/seta.png" alt="seta-voltar">
-            </a>
+        <a href="#" id="seta-voltar" class="seta seta-voltar opacidade">
+            <img class="imagem-seta" src="src/imagens/seta.png" alt="seta-voltar">
+        </a>
 
-            <div class="slide slide-rosa mostrar">
-                <div class="conteudo">
-                    <img src="src/imagens/hamburgeria-mobile.jpg" alt="">
-                    <p class="texto">Uma Landing Page para Hamburgeria com Link para Whatsapp</p>
-                    <a href="https://landing-page-hamburgeria.vercel.app/" class="botao rosa">Deploy</a>
-                </div>
+        <div class="slide slide-rosa mostrar">
+            <div class="conteudo">
+                <h2 class="titulo">Titulo slide 1</h2>
+                <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
+                    provident
+                    aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
+                    placeat, distinctio aut!</p>
+                <a href="/landing-page-hamburgeria.vercel.app" class="botao rosa">Saiba Mais</a>
             </div>
-            <div class="slide slide-verde">
-                <div class="conteudo">
-                    <h2 class="titulo">Titulo slide 2</h2>
-                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
-                        provident
-                        aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
-                        placeat, distinctio aut!</p>
-                    <a href="#" class="botao verde">Saiba Mais</a>
-                </div>
+            <div>
+                <img class="projeto-mobile" src="src/imagens/hamburgeria-mobile.jpg" alt="hamhurgueria">
             </div>
-            <div class="slide slide-laranja">
-                <div class="conteudo">
-                    <h2 class="titulo">Titulo slide 3</h2>
-                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
-                        provident
-                        aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
-                        placeat, distinctio aut!</p>
-                    <a href="#" class="botao laranja">Saiba Mais</a>
-                </div>
+        </div>
+        <div class="slide slide-verde">
+            <div class="conteudo">
+                <h2 class="titulo">Titulo slide 2</h2>
+                <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
+                    provident
+                    aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
+                    placeat, distinctio aut!</p>
+                <a href="#" class="botao verde">Saiba Mais</a>
             </div>
-            <div class="slide slide-azul">
-                <div class="conteudo">
-                    <h2 class="titulo">Titulo slide 4</h2>
-                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
-                        provident
-                        aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
-                        placeat, distinctio aut!</p>
-                    <a href="#" class="botao azul">Saiba Mais</a>
-                </div>
+        </div>
+        <div class="slide slide-laranja">
+            <div class="conteudo">
+                <h2 class="titulo">Titulo slide 3</h2>
+                <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
+                    provident
+                    aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
+                    placeat, distinctio aut!</p>
+                <a href="#" class="botao laranja">Saiba Mais</a>
             </div>
-
-            <a href="#" id="seta-avancar" class="seta seta-avancar">
-                <img class="imagem-seta" src="src/imagens/seta.png" alt="seta-avancar">
-            </a>
-
+        </div>
+        <div class="slide slide-azul">
+            <div class="conteudo">
+                <h2 class="titulo">Titulo slide 4</h2>
+                <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minus delectus
+                    provident
+                    aspernatur sunt commodi eius qui, quae tempore ut debitis, rerum cupiditate hic modi vitae alias
+                    placeat, distinctio aut!</p>
+                <a href="#" class="botao azul">Saiba Mais</a>
+            </div>
         </div>
 
-    </section>
+        <a href="#" id="seta-avancar" class="seta seta-avancar">
+            <img class="imagem-seta" src="src/imagens/seta.png" alt="seta-avancar">
+        </a>
 
-    <section id="softskill" class="skill">
-        <h2 class="titulo">Soft-skill</h2>
     </section>
 
     <section id="habilidades" class="selecao-de-personagens">
@@ -135,7 +133,7 @@
                 </li>
             </ul>
         </section>
-        <!-- <section class="personagem-selecionado">
+        <section class="personagem-selecionado">
             <img class="personagem-grande" src="./src/imagens/icons8-html.png" alt="Personagem Selecionado">
 
             <div class="informacoes-personagem">
@@ -144,7 +142,7 @@
                     adipisicing elit. Tempore officia quisquam tempora ab, in sed enim consequuntur numquam recusandae
                     sunt. Aliquid fuga commodi nostrum possimus voluptate deserunt totam error temporibus!</p>
             </div>
-        </section> -->
+        </section>
     </section>
 
     <footer id="sobre" class="social-links">

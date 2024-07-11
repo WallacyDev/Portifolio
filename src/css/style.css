@@ -5,11 +5,12 @@ html {
     font-size: 62.5%;
 }
 
-* {
+*{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    list-style: none;
 }
 
 a {
@@ -17,10 +18,12 @@ a {
 }
 
 body {
-    background-image: var(--bg-url);
+    background: var(--bg-url) no-repeat fixed center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -30,27 +33,16 @@ header {
     top: 0;
     z-index: 3;
     width: 100vw;
-    height: 15vh;
-}
-
-.profile {
-    font-family: 'Poppins', sans-serif;
+    height: 10vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 20px 10px 20px;
 }
 
-.texto-dev {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--text-dev);
-    font-family: 'Poppins', sans-serif;
-    transition: ease 0.3s;
-}
-
-.profile .texto-dev:hover {
-    color: var(--text-name);
+.logo-dev {
+    display: flex;
+    height: 6rem;
+    width: 20rem;
 }
 
 /*  BOTÃO DARK-MODE */
@@ -61,8 +53,8 @@ header {
 
 .dark-mode button {
     background: white var(--swicth-bg-url) no-repeat center;
-    width: 16px;
-    height: 16px;
+    width: 2rem;
+    height: 2rem;
     border: 0;
     border-radius: 50%;
     position: absolute;
@@ -78,10 +70,10 @@ header {
 .dark-mode span {
     position: relative;
     display: block;
-    width: 32px;
-    height: 16px;
+    width: 4rem;
+    height: 2rem;
     background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
+    border: 2px solid var(--stroke-color);
     border-radius: 9999px;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -90,36 +82,33 @@ header {
 /* Seção dos Links */
 .main ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     height: 40px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .main ul li a {
-    border: 1px solid var(--stroke-color);
-    border-radius: 10px;
-    padding: 8px;
+    border: 2px solid var(--stroke-color);
+    border-radius: 1px;
+    padding: 8px 1vw;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 2rem;
     font-weight: 500;
     transition: background ease-in-out 0.3s;
 }
 
 ul li a:hover {
     background: var(--stroke-color);
-    border-radius: 10px;
+    border-radius: 1px;
     border: 1px solid var(--text-color);
 }
 
-#projetos {
-    display: flex;
-    justify-content: center;
-}
-
 .imagens-slider {
+    position: relative;
     height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -132,34 +121,46 @@ ul li a:hover {
     position: absolute;
     opacity: 0;
     transition: 0.5s ease-out;
-    font-size: 10px;
+    font-size: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .imagens-slider .slide.mostrar {
     opacity: 1;
 }
 
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto-mobile {
+    height: 70vh;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
 .slide-rosa {
-    background-image: url(../imagens/flores.png);
+    background-image: url(../images/flores.png);
 }
 
 .slide-verde {
-    background-image: url(../imagens/girassol.png);
+    background-image: url(../images/girassol.png);
 }
 
 .slide-laranja {
-    background-image: url(../imagens/montanha.png);
+    background-image: url(../images/montanha.png);
 }
 
 .slide-azul {
-    background-image: url(../imagens/lago.png);
+    background-image: url(../images/lago.png);
 }
 
-.seta-voltar,
-.seta-avancar {
+.seta-voltar, .seta-avancar {
     position: absolute;
     z-index: 1;
 }
@@ -174,35 +175,37 @@ ul li a:hover {
 }
 
 .imagem-seta {
-    width: 20px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .opacidade {
     opacity: 0.6;
     cursor: default;
 }
- 
+
 .conteudo {
     background-color: #fff;
-    margin: 0 50px 0 50px;
-    padding: 15px;
-    width: 400px;
+    margin-left: 180px;
+    padding: 65px 60px;
+    width: 620px;
     border-radius: 10px;
 }
 
-.conteudo img {
-    height: 300px;
+.conteudo .titulo{
+    margin-bottom: 80px;
+    font-size: 5rem;
+    font-weight: 400;
 }
 
 .conteudo .texto {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 50px;
 }
 
 .conteudo .botao {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -210,7 +213,7 @@ ul li a:hover {
     color: #C50000;
 }
 
-.botao.verde {
+.botao.verde{
     color: #D9DD10;
 }
 
@@ -219,16 +222,7 @@ ul li a:hover {
 }
 
 .botao.azul {
-    color: #10ACDD;
-}
-
-#softskill {
-    background-image: url(../imagens/lago.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* min-height: calc(100vh - 80px); */
-    /* min-height: calc(100vh - 152px); = é uma propriedade que calcula o tamanho da altura ou largura da tela */
+   color: #10ACDD; 
 }
 
 .selecao-de-personagens {
